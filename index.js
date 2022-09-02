@@ -6,10 +6,58 @@
    */
 
 // ======== OBJECTS DEFINITIONS ========
-// Define your objects here
+const dog = {
+  species: 'dog',
+  name: 'Hugo',
+  gender: 'male',
+  legs: 4,
+  saying: 'Woof! Woof!',
+};
 
+const cat = {
+  species: 'cat',
+  name: 'Kitsya',
+  gender: 'female',
+  legs: 4,
+  saying: 'Meow! Meow!',
+};
+
+const woman = {
+  species: 'human',
+  name: 'Dorothy',
+  gender: 'female',
+  legs: 2,
+  hands: 2,
+  saying: 'Well...',
+};
+
+const man = {
+  species: 'human',
+  name: 'George',
+  gender: 'male',
+  legs: 2,
+  hands: 2,
+  saying: '...Hm',
+};
+
+const inhabitans = [dog, cat, woman, man];
+const inhabitansPropertyNames = [
+  'species',
+  'name',
+  'gender',
+  'legs',
+  'hands',
+  'saying',
+];
 
 // ======== OUTPUT ========
+inhabitans.forEach((inhabitant) =>
+  print(
+    inhabitansPropertyNames
+      .map((propertyName) => inhabitant[propertyName])
+      .join('; ')
+  )
+);
 /* Use print(message) for output.
    Default tag for message is <pre>. Use print(message,'div') to change containing element tag.
 
@@ -27,5 +75,3 @@
    print('human; <strong>John</strong>; male; 2; 2; <em>Hello world!</em>; Rex, Tom, Jenny');
    print('human; <strong>John</strong>; male; 2; 2; <em>Hello world!</em>; Rex, Tom, Jenny', 'div');
    */
-
-
