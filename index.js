@@ -11,6 +11,7 @@ const dog = {
   name: 'Hugo',
   gender: 'male',
   legs: 4,
+  hands: 0,
   saying: 'Woof! Woof!',
 };
 
@@ -19,6 +20,7 @@ const cat = {
   name: 'Kitsya',
   gender: 'female',
   legs: 4,
+  hands: 0,
   saying: 'Meow! Meow!',
 };
 
